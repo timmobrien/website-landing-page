@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="company-name"> Tim O'Brien</h1>
+        <ul class="nav-bar">
+          <li class="nav-list" > <a  href="https://github.com/timmobrien" target="blank"> Github </a> </li>
+          <li class="nav-list" > <a  href="https://www.linkedin.com/in/timothy-o-brien-7a293b17a/" target="blank"> LinkedIn </a> </li>
+        </ul>
+    </nav>
+  </header>
+  
+
+  <div id="hero">
+    <div class="hero-txt">
+      <button class="button-txt" onClick="openForm()"> Contact Me </button>
+      <button class="button-txt"> About Me</button>
+    </div>
+    <div class="form-popup" id="form">
+      <form action="action_page.php" class="form-container">
+        <h1> Contact Me </h1>
+  
+        <label for ="email"><b>Email</b></label>
+        <input type="text" placeholder="example@gmail.com" name="email" required> <br>
+  
+        <label for ="Name"><b>Name</b></label>
+        <input type="text" placeholder="Enter your full name" name="email" required> <br>
+  
+        <label for ="message"><b>Your Message</b></label>
+        <textarea placeholder="Please type your message here" name="message" style="height:200px"required> </textarea>
+  
+        <button type="submit" class="btn" onclick="closeForm()">Submit</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
+  
+      </form>
+    </div>
+  </div>
+     
+
+  
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("form").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("form").style.display = "none";
+    }
+  </script>
+</body>
+</html>
