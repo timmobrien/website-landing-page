@@ -87,10 +87,11 @@ header {
     margin-top: -500px;
     border-radius: 10px;
     z-index: 1;
+    width: 30%;
 }
 
 .form-container {
-    width: 1000px;
+    width: 100%;
     max-height: 2000px;
     padding: 10px;
     background-color: rgb(240, 240, 240);
@@ -174,7 +175,7 @@ header {
   
 .topright {
     position: absolute;
-    right: 5px;
+    right: -17px;
     top: 10px;
   }
 
