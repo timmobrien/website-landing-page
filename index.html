@@ -21,25 +21,35 @@
   <div id="hero">
     <div class="hero-txt">
       <button class="button-txt" onClick="openForm()"> Contact Me </button>
-      <button class="button-txt"> About Me</button>
+      <button class="button-txt" onClick="openAbout()"> About Me</button>
     </div>
+
     <div class="form-popup" id="form">
       <form action="action_page.php" class="form-container">
         <h1> Contact Me </h1>
+
+        <button type="reset" class="close-button topright" onclick="closeForm()">X</button>
   
         <label for ="email"><b>Email</b></label>
-        <input type="text" placeholder="example@gmail.com" name="email" required> <br>
+        <input type="text" placeholder="example@gmail.com" name="email" required>
   
         <label for ="Name"><b>Name</b></label>
-        <input type="text" placeholder="Enter your full name" name="email" required> <br>
+        <input type="text" placeholder="Enter your full name" name="email" required> 
   
         <label for ="message"><b>Your Message</b></label>
         <textarea placeholder="Please type your message here" name="message" style="height:200px"required> </textarea>
   
         <button type="submit" class="btn" onclick="closeForm()">Submit</button>
-        <button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
+        
   
       </form>
+    </div>
+
+    <div class="about-popup" id="about">
+      <div class="aboutContainer">
+        <h1>Hi, I'm Tim!</h1>  
+        <button type="reset" class="close-button topright" onclick="closeAbout()">X</button>
+      </div>
     </div>
   </div>
      
@@ -54,6 +64,14 @@
 
     function closeForm() {
       document.getElementById("form").style.display = "none";
+    }
+
+    function openAbout() {
+      document.getElementById("about").style.display = "block";
+    }
+
+    function closeAbout() {
+      document.getElementById("about").style.display = "none";
     }
   </script>
 </body>

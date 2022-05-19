@@ -81,28 +81,34 @@ header {
 .form-popup {
     display: none;
     position: fixed;
-    margin-left: 30%;
-    top: 25%;
-    border: 3px solid black;
+    top: 50%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
     border-radius: 10px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .form-container {
     width: 1000px;
     max-height: 2000px;
     padding: 10px;
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(240, 240, 240);
     border-radius: 5px;
+    border: 3px solid black;
 
+}
+
+.form-container h1 {
+    margin-top: 5px;
 }
 
 .form-container input[type=text], .form-container textarea {
     width: 98%;
     padding: 10px;
     margin: 5px 0 22px 0;
-    border: 2px solid black;
-    background-color: transparent;
+    border: 1px solid grey;
+    background-color: white;
     resize: none;
     outline: none;
 }
@@ -110,19 +116,68 @@ header {
 .form-container .btn {
     background-color: rgb(120, 172, 120);
     color: white;
+    border-radius: 10px;
     font-size: 20px;
     padding: 16px 20px;
-    border: none;
+    border: 2px solid green;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px;
     opacity: 0.8;
+    box-shadow: 5px 5px 10px rgb(91, 134, 91);
 }
 
 .form-container .cancel {
     background-color: rgb(204, 97, 97);
+    border: 2px solid rgb(184, 20, 20);
+    box-shadow: 5px 5px 10px rgb(109, 53, 53);
 }
 
 .form-container .btn:hover, .button-txt:hover {
     opacity: 100%
 }
 
+.about-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    z-index: 1;
+}
+
+.aboutContainer {
+    width: 1000px;
+    height: 1000px;
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+.close-button {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    display: inline-block;
+    padding: 3px 3px;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+  }
+  
+.topright {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+
+  .close-button:hover{
+      background-color: rgb(238, 69, 69);
+  }
