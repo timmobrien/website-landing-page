@@ -176,16 +176,12 @@ header {
     white-space: nowrap
   }
   
-.topright-contact {
+.topright {
     position: absolute;
     right: 7px;
     top: 7px;
   }
-.topright-about {
-    position: absolute;
-    right: 0px;
-    top: 7px;
-  }
+
 
   .close-button:hover{
       background-color: rgb(238, 69, 69);
